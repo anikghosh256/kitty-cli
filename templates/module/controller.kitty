@@ -1,0 +1,14 @@
+import ${moduleName}Service from './${moduleName}Service.js';
+import Controller from '../../controller/Controller.js';
+
+export default class ${moduleName} extends Controller{
+  constructor() {
+    super();
+    this.${lowercase(moduleName)}Service = new ${moduleName}Service();
+  }
+
+  async get${moduleName}(event, context, callback) {
+    // write your code here
+  }
+
+}
