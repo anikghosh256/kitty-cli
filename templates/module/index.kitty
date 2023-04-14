@@ -1,8 +1,0 @@
-"use strict";
-import ${moduleName}Controller from "./${moduleName}Controller.js";
-const ${lowercase(moduleName)}Controller = new ${moduleName}Controller();
-
-export async function home(event, context, callback) {
-  const response = {};
-  return response;
-}
