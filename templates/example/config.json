@@ -1,0 +1,11 @@
+{
+  "outputExtension": "js",
+  "sourceFile": "./example.kitty",
+  "dir": "./",
+  "inputs": {
+    "moduleName": {},
+    "variable": {
+      "default": "hi"
+    }
+  }
+}
