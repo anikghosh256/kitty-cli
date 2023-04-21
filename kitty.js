@@ -7,9 +7,12 @@
  * @author Anik Ghosh <https://github.com/anikghosh256>
  */
 
+const { logo, showHelp } = require('./helpers/print');
+
 require('yargs/yargs')(process.argv.slice(2))
   .command('$0', false, () => {}, (argv) => {
-    console.log('argv')
+    logo();
+    showHelp();
   })
   .commandDir('cmds')
   .demandCommand()
