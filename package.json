@@ -4,8 +4,8 @@
 	"version": "0.0.1",
 	"license": "MIT",
 	"bin": {
-		"kitty-cli": "index.js",
-		"kitty": "index.js"
+		"kitty-cli": "kitty.js",
+		"kitty": "kitty.js"
 	},
 	"author": {
 		"name": "Anik Ghosh",
@@ -17,7 +17,7 @@
 		"Anik Ghosh"
 	],
 	"files": [
-		"index.js",
+		"kitty.js",
 		"cmds",
 		"templates"
 	],
