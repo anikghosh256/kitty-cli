@@ -1,5 +1,5 @@
 {
-	"name": "kitty-cli",
+	"name": "@anikghosh256/kitty-cli",
 	"description": "CLI tool for creating kitty component.",
 	"version": "0.0.1",
 	"license": "MIT",
