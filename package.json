@@ -12,6 +12,14 @@
 		"email": "anikghosh256@gmail.com",
 		"url": "https://github.com/anikghosh256"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/anikghosh256/kitty-cli.git"
+	},
+	"bugs": {
+		"url": "https://github.com/anikghosh256/kitty-cli/issues"
+	},
+	"homepage": "https://github.com/anikghosh256/kitty-cli#readme",
 	"keywords": [
 		"kitty-cli",
 		"Anik Ghosh",
