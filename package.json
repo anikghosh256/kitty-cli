@@ -14,7 +14,9 @@
 	},
 	"keywords": [
 		"kitty-cli",
-		"Anik Ghosh"
+		"Anik Ghosh",
+		"template compiler",
+		"project component generator"
 	],
 	"files": [
 		"kitty.js",
