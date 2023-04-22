@@ -47,6 +47,11 @@ exports.handler = function (argv) {
       inputObject[inputKeys[i]] = argv[inputKeys[i]];
     }
 
+    // check name field
+    if(argv.name === undefined) {
+      throw new Error(`Please provide a name for the component. It will be used as the output file name.`)
+    }
+
     // check output folder or create if not exist
     const outputFolder = path.resolve(projectPath, config.dir);
     if(!fs.existsSync(outputFolder)) {
@@ -57,7 +62,7 @@ exports.handler = function (argv) {
     const compiled = compile(sourceFile, inputObject);
 
     // write to output file
-    const outputFile = path.resolve(projectPath, `${config.dir}/${argv.moduleName}.${config.outputExtension}`);
+    const outputFile = path.resolve(projectPath, `${config.dir}/${argv.name}.${config.outputExtension}`);
     fs.writeFileSync(outputFile, compiled);
 
     console.log(chalk.green('Component created successfully!'));

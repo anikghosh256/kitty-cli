@@ -7,13 +7,13 @@ In this directory every folder is a module. Each module has a `config.json` file
 To create a module you have to run the following command:
 
 ```bash
-kitty-cli create <module-name>
+kitty-cli create <module-name> --name <output-file-name>
 ```
 
 You can also pass parameters to the command. For example:
 
 ```bash
-kitty-cli create <module-name> --author "John Doe" --email "john@doe.com"
+kitty-cli create <module-name> --name "userModule" --author "John Doe" --email "john@doe.com"
 ```
 
 ## How to create a module template
@@ -26,8 +26,8 @@ To create a module template you have to create new folder in kitty folder with m
   "sourceFile": "./example.kitty",
   "dir": "./",
   "inputs": {
-    "moduleName": {},
-    "variable": {
+    "name": {},
+    "message": {
       "default": "hi"
     }
   }
@@ -38,10 +38,9 @@ The `outputExtension` is the extension of the output file. The `sourceFile` is t
 
 Then you have to create a template file. The template file should have the same name as the `sourceFile` in the `config.json` file. For example if the `sourceFile` is `./example.kitty` the template file should be named `example.kitty`. The template file will contain your code and some variables. The variables will be replaced with the inputs you passed to the command. For example if you have a variable named `name` in your template file and you pass `John` as the value of the `name` variable the `name` variable in the template file will be replaced with `John`.
 
-
 ```js
 // example.kitty
-console.log('Hello {{name}}');
+console.log('Hello ${name}');
 ```
 
 ```bash
@@ -51,6 +50,8 @@ kitty-cli create example --name "John"
 The output will be:
 
 ```js
-// example.js
+// John.js
 console.log('Hello John');
 ```
+
+Note: The `name` variable is a special variable. It will also be used to name the output file. If you don't pass the `name` variable to the command it will show an error.

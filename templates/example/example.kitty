@@ -1,9 +1,9 @@
 /**
- * Example module
+ * ${name} module
  */
 
-export default class ${moduleName} {
+export default class ${name} {
   hello() {
-    console.log("hello")
+    console.log("${message}")
   }
 }

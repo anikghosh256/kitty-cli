@@ -3,8 +3,8 @@
   "sourceFile": "./example.kitty",
   "dir": "./",
   "inputs": {
-    "moduleName": {},
-    "variable": {
+    "name": {},
+    "message": {
       "default": "hi"
     }
   }
