@@ -1,7 +1,7 @@
 {
 	"name": "@anikghosh256/kitty-cli",
 	"description": "CLI tool for creating kitty component.",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"license": "MIT",
 	"bin": {
 		"kitty-cli": "kitty.js",
@@ -29,7 +29,8 @@
 	"files": [
 		"kitty.js",
 		"cmds",
-		"templates"
+		"templates",
+		"helpers"
 	],
 	"scripts": {
 		"format": "prettier --write \"./**/*.{js,json}\""
