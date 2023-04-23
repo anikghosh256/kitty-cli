@@ -5,7 +5,7 @@ CLI tool for creating kitty component.
 
 ## Installation
 ```bash
-npm install @anikghosh256/kitty-cli
+npm install @anikghosh256/kitty-cli -g
 ```
 
 ## Usage
