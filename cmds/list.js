@@ -1,5 +1,8 @@
+const fs = require('fs');
 const path = require('path');
 const chalk = require('chalk');
+
+const { logo } = require('../helpers/print');
 
 exports.command = 'list'
 exports.desc = 'List all kitty components.'
@@ -14,13 +17,16 @@ exports.handler = function () {
     }
 
     const kittyDir = fs.readdirSync(path.resolve(projectPath, './kitty'));
+    logo();
     console.log(chalk.green('Kitty components:'));
     console.log('');
     for(let i = 0; i < kittyDir.length; i++) {
-      console.log(chalk.cyan(kittyDir[i]));
+      // check if dir
+      if(fs.lstatSync(path.resolve(projectPath, `./kitty/${kittyDir[i]}`)).isDirectory()) {
+        console.log(chalk.cyan(kittyDir[i]));
+      }
     }
 
-    console.log('');
   } catch (error) {
     console.log(chalk.red(error.message));
   }
