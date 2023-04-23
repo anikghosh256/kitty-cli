@@ -1,4 +1,3 @@
-const { copy } = require('../helpers/file');
 const path = require('path');
 const chalk = require('chalk');
 const fs = require('fs');
