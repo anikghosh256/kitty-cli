@@ -7,5 +7,6 @@
     "message": {
       "default": "hi"
     }
-  }
+  },
+  "successMessage": "Read README.md for more information."
 }
