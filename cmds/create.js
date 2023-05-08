@@ -63,8 +63,15 @@ exports.handler = function (argv) {
     // write to output file
     const outputFile = path.resolve(projectPath, `${config.dir}/${argv.name}.${config.outputExtension}`);
     fs.writeFileSync(outputFile, compiled);
-
+    
+    console.log();
     console.log(chalk.green('Component created successfully!'));
+
+    // check if config file has successMessage
+    if(config.successMessage !== undefined) {
+      console.log();
+      console.log(chalk.green(config.successMessage));
+    }
 
   } catch (error) {
     console.log(chalk.red(error.message));
