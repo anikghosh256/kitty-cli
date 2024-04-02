@@ -23,6 +23,7 @@ To create a module template you have to create new folder in kitty folder with m
 ```json
 {
   "outputExtension": "js",
+  "outputFile": "example.js",
   "sourceFile": "./example.kitty",
   "dir": "./",
   "inputs": {

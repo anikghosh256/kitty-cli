@@ -1,5 +1,6 @@
 {
   "outputExtension": "js",
+  "outputFile": "example.js",
   "sourceFile": "./example.kitty",
   "dir": "./",
   "inputs": {
