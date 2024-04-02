@@ -1,7 +1,7 @@
 {
 	"name": "@anikghosh256/kitty-cli",
 	"description": "CLI tool for creating kitty component.",
-	"version": "0.3.2",
+	"version": "0.4.0",
 	"license": "MIT",
 	"bin": {
 		"kitty-cli": "kitty.js",
@@ -36,7 +36,7 @@
 		"format": "prettier --write \"./**/*.{js,json}\""
 	},
 	"dependencies": {
-		"@anikghosh256/compile-template": "^1.2.0",
+		"@anikghosh256/compile-template": "^1.4.0",
 		"chalk": "^4.1.2",
 		"yargs": "^17.7.1"
 	},
