@@ -34,9 +34,10 @@ kitty-cli create <module-name> --name "userModule" --author "John Doe" --email "
 
 To create a module template you have to create new folder in kitty folder with module name. For example if you want to create a module named `example` you have to create a folder named `example` in the kitty folder. Then you have to create a `config.json` file in the `example` folder. The `config.json` file should contain the following:
 
-```json
+```js
 {
   "outputExtension": "js",
+  "outputFile": "example.js", /** optional (also can written with variable Ex: "${time(now)}-${name}.js" **/
   "sourceFile": "./example.kitty",
   "dir": "./",
   "inputs": {
