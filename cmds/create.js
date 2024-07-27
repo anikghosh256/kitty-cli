@@ -89,7 +89,7 @@ exports.handler = function (argv) {
 		// check if config file has successMessage
 		if (config.successMessage !== undefined) {
 			console.log();
-			console.log(chalk.green(config.successMessage));
+			console.log(chalk.green(compile(null, inputObject, config.successMessage)));
 		}
 	} catch (error) {
 		console.log(chalk.red(error.message));
