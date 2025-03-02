@@ -1,0 +1,9 @@
+/**
+ * ${name} module
+ */
+
+export default class ${name} {
+  hello() {
+    console.log("${message}")
+  }
+}

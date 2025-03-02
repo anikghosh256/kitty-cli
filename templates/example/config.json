@@ -1,13 +1,13 @@
 {
-  "outputExtension": "js",
-  "outputFile": "example.js",
-  "sourceFile": "./example.kitty",
-  "dir": "./",
-  "inputs": {
-    "name": {},
-    "message": {
-      "default": "hi"
-    }
-  },
-  "successMessage": "Read README.md for more information."
+	"outputExtension": "js",
+	"outputFile": "example.js",
+	"sourceFile": "./example.kitty",
+	"dir": "./",
+	"inputs": {
+		"name": {},
+		"message": {
+			"default": "hi"
+		}
+	},
+	"successMessage": "Read README.md for more information."
 }
