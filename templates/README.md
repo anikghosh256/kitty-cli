@@ -22,16 +22,22 @@ To create a module template you have to create new folder in kitty folder with m
 
 ```json
 {
-  "outputExtension": "js",
-  "outputFile": "example.js",
-  "sourceFile": "./example.kitty",
-  "dir": "./",
-  "inputs": {
-    "name": {},
-    "message": {
-      "default": "hi"
-    }
-  }
+	"type": "folder", // set type if you ar making a folder
+	"mapFileName": {
+		"hello.kitty": "hello.js",
+		"lib/index.kitty": "index.js"
+	}, // it support file map you can map and rename file otherwise it will follow original name and only work when type == "folder"
+	"outputExtension": "js", // not required if "type" == "folder"
+	"outputFile": "example.js", // not required if "type" == "folder"
+	"sourceFile": "./example.kitty", // not required if "type" == "folder"
+	"dir": "./${name}", // you can set variable for output path
+	"inputs": {
+		"name": {},
+		"message": {
+			"default": "hi"
+		}
+	},
+	"extensions": ["js", "css", "php"] // Only compile files matching these extensions (applies when "type" == "folder")
 }
 ```
 

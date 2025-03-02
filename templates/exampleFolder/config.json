@@ -1,0 +1,16 @@
+{
+	"type": "folder",
+	"mapFileName": {
+		"hello.kitty": "hello.js",
+		"lib/index.kitty": "index.js"
+	},
+	"dir": "./${name}",
+	"inputs": {
+		"name": {},
+		"message": {
+			"default": "hi"
+		}
+	},
+	"extensions": [],
+	"successMessage": "Read README.md for more information."
+}
