@@ -1,7 +1,7 @@
 {
 	"name": "@anikghosh256/kitty-cli",
 	"description": "CLI tool for creating kitty component.",
-	"version": "0.5.1",
+	"version": "0.5.0",
 	"license": "MIT",
 	"bin": {
 		"kitty-cli": "kitty.js",
