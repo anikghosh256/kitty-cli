@@ -109,6 +109,7 @@ function processFolder(config, inputObject, argv, projectPath, configFilePath) {
 		}
 
 		ensureDirExists(path.dirname(outputFilePath));
+		!config.extensions ||
 		config.extensions.length === 0 ||
 		config.extensions.includes(fileExtension)
 			? fs.writeFileSync(outputFilePath, compile(file, inputObject))
